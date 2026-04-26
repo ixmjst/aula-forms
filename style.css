@@ -61,8 +61,10 @@ img{
 aside{
 padding: 4rem;
 background-color: var(--surface-secundary);
-&.aside-conteiner{
-    max-width:33rem;
+}
+.aside-conteiner{
+ max-width:33rem;
+ height: 55rem;
     margin-right:auto;
     & h2{
     font: 600 2.5rem/1.25 var(--font-family);
@@ -70,7 +72,7 @@ background-color: var(--surface-secundary);
   & span{
     color: var(--text-highlight);
   }}
-}}
+}
 header{
     font-family: var(--font-family-alice);
     display: flex;
