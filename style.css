@@ -64,10 +64,12 @@ background-color: var(--surface-secundary);
 &.aside-conteiner{
     max-width:33rem;
     margin-right:auto;
+    & h2{
     font: 600 2.5rem/1.25 var(--font-family);
+    margin-bottom: .45rem;
   & span{
     color: var(--text-highlight);
-  }
+  }}
 }}
 header{
     font-family: var(--font-family-alice);
@@ -97,3 +99,58 @@ header img{
     border-bottom-right-radius:98px ;
     
 }
+
+
+form{
+    margin-top: 3rem;
+    
+}
+fieldset{
+    border: none;
+    display: grid;
+    gap: 1.5rem;
+
+}
+legend{
+    font: 600 1rem/1.25 var(--font-family);
+    margin-bottom: 1.25rem;
+
+}
+
+input, textarea{
+   
+    width: 100%;
+    border-radius: .5rem;
+    border:1px solid var(--stroke-default) ;
+
+    padding: .75rem 1rem;
+    font:var(--text);
+}
+label{
+    font: var(--text-sm);
+    color: var(--text-secundary);
+    display: block;
+    margin-bottom: .25rem;
+     
+}
+input:focus,
+select:focus,
+textarea:focus{
+    outline: .25rem solid var(--surface-secundary);
+    border: .125 solid var(--text-highlight);
+}
+input[type="date"]{
+   color: #8F8881;
+}
+.select-wrapper {
+    display: flex;
+    align-items: center;
+
+
+}
+.select-wrapper input:focus{
+    outline: none;
+}
+
+
+     

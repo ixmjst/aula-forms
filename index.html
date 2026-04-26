@@ -19,10 +19,49 @@
             <img src="assets/navigation-back-arrow-svgrepo-com.svg" alt="icone voltar">
             <span>Voltar</span>
         </div>
-        <h1>Formulário para compra de Produtos</h1>
-        <p>Preencha o formulário abaixo para concluir sua compra.</p>
+        <h1>Formulário para aceder ao marketplace </h1>
+        <p>Preencha o formulário abaixo para concluir com o registro</p>
+        <form >
+            <fieldset class="client-info">
+                <legend>Informações do Cliente</legend>
+                <div class="input-wrapper"> 
+                     <label for="name-field">Nome Completo: </label>
+                <input 
+                id="name-field"
+                type="text"
+                placeholder="Nome do Cliente" name="name-field" >
+                </div>
+               <div class="input-wrapper">
+                 <label for="data-nasc">Data de Nascimento:</label>
+                <input 
+                id="data-nasc"
+                type="date"
+                name="data-nasc"
+                >
+               </div>
+               <div class="select-wrapper">
+                 <label> Genero:</label>
+                 
+                 <input type="radio" name="gender"> 
+                 Male
+                 <input type="radio" name="gender">
+                 Female
+
+               </div>
+               <div class="textarea-wrapper">
+                  <label for="desc">Conte-nos um pouco sobre si:</label>
+                  <textarea id="desc" placeholder="Faça uma breve descrição..."></textarea> 
+               </div>
+               <div class="droparea-wrapper">
+                 <input type="file " id="doc" name="doc">
+                 <img src="assets/cloud-up-arrow-svgrepo-com.svg" alt="">
+                 <p>Clique Aqui <br>
+                para selecionar os arquivos</p>
+               </div>
+            </fieldset>
+        </form>
     </main>
-    <aside>
+    <aside class="aside-conteiner">
         <header>
           <img src="assets/sp.jpg" alt="logo sprinco">
           <span><em>Spring Comfort - Onde o seu bem-estar importa</em></span>
