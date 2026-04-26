@@ -31,6 +31,13 @@
                 type="text"
                 placeholder="Nome do Cliente" name="name-field" >
                 </div>
+                <div class="input-wrapper">
+                     <label for="email">E-mail: </label>
+                <input 
+                id="email"
+                type="text"
+                placeholder="Insira o seu e-mail" name="email" >
+                </div>
                <div class="input-wrapper">
                  <label for="data-nasc">Data de Nascimento:</label>
                 <input 
@@ -50,16 +57,45 @@
                </div>
                <div class="textarea-wrapper">
                   <label for="desc">Conte-nos um pouco sobre si:</label>
-                  <textarea id="desc" placeholder="Faça uma breve descrição..."></textarea> 
+                  <textarea id="desc" placeholder="Faça uma breve descrição..." rows="6" cols="30"></textarea> 
                </div>
                <div class="droparea-wrapper">
-                 <input type="file " id="doc" name="doc">
+                <label for="doc">Bilhete de Identidade</label>
+                <div class="dropzone">
+                 <input type="file" id="doc" name="doc">
                  <img src="assets/cloud-up-arrow-svgrepo-com.svg" alt="">
                  <p>Clique Aqui <br>
                 para selecionar os arquivos</p>
+                </div>
                </div>
             </fieldset>
+            <fieldset id="Endereço Residencial">
+                <legend>Endereço Residencial</legend>
+                <div class="input-wrapper">
+                    <label for="street">Rua</label>
+                   <input type="text" id="
+                    street" name="street"> </div>
+                 <div>
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" name="city"></div>
+                    
+            </fieldset>
+            <div class="terms-wrapper">
+                <div class="checkbox-image">
+                 <input type="checkbox" name="terms" id="terms">
+                 <label for="terms">Declaro que li e concordo com os 
+                    <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong> da loja 
+                    Sprinco
+                 </label>
+                </div>
+            </div>
         </form>
+        <div id="botoes">
+            <button id="botao1">Salvar Dados</button>
+            <button id="botao2">
+              Registrar
+            </button>
+        </div>
     </main>
     <aside class="aside-conteiner">
         <header>
